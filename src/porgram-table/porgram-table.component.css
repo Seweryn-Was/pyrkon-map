@@ -1,0 +1,30 @@
+.program-table> tbody, tr, th, td{
+    border: 1px solid black;
+}
+.program-table{
+    border-collapse: collapse;
+}
+
+.group-row{
+    background-color: #442b4e;
+    color: white;
+    text-align: center;
+}
+a:link{
+    text-decoration:none;
+    text-emphasis-color:#442b4e;
+}
+
+.program-more{
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    .program-lecturer{
+        display:none;
+    }
+    *{
+        font-size: 13px;
+    }
+  }

@@ -1,0 +1,27 @@
+<table class = "program-table">
+    <thead>
+        <tr>
+            <th class = "program-room"> sala </th>
+            <th class = "program-time"> godzina </th>
+            <th class = "program-title"> tytuł </th>
+            <th class = "program-lecturer"> prowadzący </th>
+            <th class = "program-more">Learn more</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr class = "group-row">
+            <td colspan = "9999"> FRIDAY</td>
+        </tr>
+        <tr *ngFor = "let lecture of lectureList" class="program-row">
+            <ng-container > <!--*ngIf="lecture.day ==='Friday'"-->
+                    <td class = "program-room">{{lecture.room}}</td>
+                    <td class = "program-time">{{lecture.time.getHours()+":"+lecture.time.getMinutes()}}</td>
+                    <td class = "program-title">{{lecture.title}}</td>
+                    <td class = "program-lecturer">{{lecture.lecturer}}</td>
+                    <td class = "program-more"> <a [routerLink]="['/program/details',lecture.id]"> <b>more</b></a></td>
+            </ng-container>
+
+        </tr>
+    </tbody>
+
+</table>

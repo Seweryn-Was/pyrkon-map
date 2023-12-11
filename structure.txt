@@ -1,0 +1,15 @@
+schedule-component
+-|table-component
+  -|table-header-component
+    -|table-days-component
+      -|table lectures-component
+-|map-component
+
+lecture interface {
+place: string,
+day: date ,
+hour hour ,
+title: string ,
+lecturer: string ,
+description: string ,
+}
