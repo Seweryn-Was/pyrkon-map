@@ -1,9 +1,32 @@
-<section class = "program-details">
-    <h1>
-        {{lecutre?.title}}
-    </h1>
-    <h3>
-        {{lecutre?.lecturer}}
-    </h3>
-</section>
+<h3>
+    <a [routerLink] = "['/program']">
+        Come Back
+    </a>
+</h3>
+<ng-container *ngIf="isFound">
+    <section  class = "program-details">
+        <h1>
+            {{lecture.title}}
+        </h1>
+        <h3>
+            {{lecture.lecturer}}
+        </h3>
+        <section>
+            <p>
+                {{lecture.guests}}
+            </p>
+            <p>
+                {{lecture.day}} | {{lecture.time.getHours()+":"+ lecture.time.getMinutes()}} | {{lecture.room}}
 
+            </p>
+        </section>
+    </section>
+</ng-container>
+<ng-container *ngIf = "!isFound">
+    <h3>
+        Error 404
+    </h3>
+    <p> 
+        lecture was not found
+    </p>
+</ng-container>
