@@ -48,4 +48,17 @@ getLectureById(id:number):Lecture | undefined {
 
 }
 
+returnEmptyLecture(){
+  return {    
+    room: "Empty",
+    day: "Empty" ,
+    time: new Date(0, 0, 0, 0, 0),
+    title: "Empty" ,
+    lecturer: `Empty`,
+    guests: "",
+    description: "Empty" ,
+    id:-1,
+ }
+}
+
 }

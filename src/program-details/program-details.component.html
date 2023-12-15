@@ -1,6 +1,6 @@
 <h3>
     <a [routerLink] = "['/program']">
-        Come Back
+        < Come Back
     </a>
 </h3>
 <ng-container *ngIf="isFound">
@@ -19,9 +19,20 @@
                 {{lecture.day}} | {{lecture.time.getHours()+":"+ lecture.time.getMinutes()}} | {{lecture.room}}
 
             </p>
+            <p>
+                {{lecture.guests}}
+            </p>
+            
+            <section>
+                <p>
+                    {{lecture.description}}
+                </p>
+            </section>
         </section>
     </section>
 </ng-container>
+
+
 <ng-container *ngIf = "!isFound">
     <h3>
         Error 404
