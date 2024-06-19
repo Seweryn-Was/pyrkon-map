@@ -6,7 +6,7 @@
 /out-tsc
 /bazel-out
 
-structure.txt
+test.txt
 
 # Node
 /node_modules
