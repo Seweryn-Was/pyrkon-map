@@ -1,0 +1,11 @@
+<section *ngIf="map!=''">
+    <p >Display Hall {{map}}</p>
+   <p>
+      {{message}}
+    </p>
+<app-hall3 *ngIf="map=='3/3A'"></app-hall3>
+<app-hall5 *ngIf="map=='5'"></app-hall5>
+<app-hall5-a *ngIf="map=='5A'"></app-hall5-a>
+<app-hall7 *ngIf="map=='7'"></app-hall7>
+</section>
+

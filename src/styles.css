@@ -2,3 +2,12 @@
 *{
     font-family: Lato,Helvetica Neue,helvetica,arial,sans-serif;
 }
+@media (max-width: 800px) {
+    /* CSS that should be displayed if width is equal to or less than 800px goes here */
+    body{
+        background-color:cornsilk;
+    }
+    *{
+        font-size: 13px;
+    }
+  }

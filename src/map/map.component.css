@@ -1,7 +1,33 @@
+
+.building{
+    fill:#c9c92e;
+}
 .building:hover{
-    fill:black;
+    fill:blueviolet;
+    cursor:pointer;
+}
+.building:active{
+    fill: #c9c92e;
+}
+.current{
+    fill:darkmagenta;
 }
 
-a:visited{
-    fill: none;
+@media (max-width: 800px) {
+    .building:hover{
+        fill: #c9c92e;
+    }
+    .building:active{
+        fill: blue;
+    }
+    .current:hover{
+        fill:darkmagenta;
+        
+    }
+    svg, .main-map{
+        width:100%; 
+        height: auto;
+    }
+
 }
+

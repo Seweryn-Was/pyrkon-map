@@ -1,13 +1,14 @@
 import { Injectable } from '@angular/core';
 import { Lecture } from '../../Interface/lecture';
 
+
 @Injectable({
   providedIn: 'root'
 })
 export class ProgramDataService {
 
-  constructor() { }
-
+  constructor() { 
+  }
   protected lectureList :  Lecture[] = [{
     room: "Arena",
     day: "Friday" ,
@@ -38,6 +39,27 @@ export class ProgramDataService {
   description: "poznaj twórców Titandall 2" ,
   id: 3,
 }, 
+{
+  room: "Aula mała",
+  day: "Friday" ,
+  time: new Date(2023, 6, 17, 15, 30),
+  title: "jak głupia jest Diuna" ,
+  lecturer: `ZAjebisty człek`,
+  guests: "guest 1",
+  description: "ona naprawdę jest głupia" ,
+  id: 4,
+}, 
+{
+  room: "Aula mała",
+  day: "Sunday" ,
+  time: new Date(2023, 6, 17, 15, 30),
+  title: "o magii Titanfall 2" ,
+  lecturer: `Gigachad`,
+  guests: "",
+  description: "poznaj magię Titandall 2" ,
+  id: 5,
+}, 
+
 ]
 
 getAllLectures(): Lecture[]{

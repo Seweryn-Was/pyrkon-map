@@ -1,6 +1,19 @@
-.program-table> tbody, tr, th, td{
-    border: 1px solid black;
+.group-row> tr ,td{
+    border-radius: 5px;
 }
+
+
+.program-table> tbody .program-row:nth-child(odd){
+    background-color: #f0f0f0;
+}
+.program-table>thead{
+    background-color: #c5c600;
+}
+.program-lecturer, .program-more, .program-time, .program-room, .program-title{
+    border-radius: 0;
+}
+
+
 .program-table{
     border-collapse: collapse;
 }
@@ -14,6 +27,10 @@ a:link{
     text-decoration:none;
     text-emphasis-color:#442b4e;
 }
+a:visited{
+    text-decoration: none;
+    text-emphasis-color:#442b4e;
+}
 
 .program-more{
     text-align: center;
@@ -23,8 +40,5 @@ a:link{
     /* CSS that should be displayed if width is equal to or less than 800px goes here */
     .program-lecturer{
         display:none;
-    }
-    *{
-        font-size: 13px;
     }
   }
